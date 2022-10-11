@@ -6,24 +6,36 @@ import (
 	"os"
 	"strconv"
 
-	"desafio-go-web/internal/domain"
+	"desafio-go-web-leidyroldan/cmd/server/handler"
+	"desafio-go-web-leidyroldan/internal/domain"
+	"desafio-go-web-leidyroldan/internal/tickets"
+
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 
-	// Cargo csv.
+	// Load csv file.
 	list, err := LoadTicketsFromFile("../../tickets.csv")
 	if err != nil {
 		panic("Couldn't load tickets")
 	}
 
+	repository := tickets.NewRepository(list)
+	service := tickets.NewService(repository)
+	ts := handler.NewService(service)
+
 	r := gin.Default()
+	api := r.Group("api/v1")
+
 	r.GET("/ping", func(c *gin.Context) { c.String(200, "pong") })
-	// Rutas a desarollar:
-	
-	// GET - “/ticket/getByCountry/:dest”
-	// GET - “/ticket/getAverage/:dest”
+
+	ticket := api.Group("/ticket")
+	{
+		ticket.GET("/getByCountry/:dest", ts.GetTicketsByCountry())
+		ticket.GET("/getAverage/:dest", ts.GetAverageDestination())
+	}
+
 	if err := r.Run(); err != nil {
 		panic(err)
 	}

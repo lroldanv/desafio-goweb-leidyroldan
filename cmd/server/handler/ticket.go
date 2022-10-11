@@ -33,7 +33,7 @@ func (s *Service) GetTicketsByCountry() gin.HandlerFunc {
 	}
 }
 
-func (s *Service) AverageDestination() gin.HandlerFunc {
+func (s *Service) GetAverageDestination() gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 		destination := c.Param("dest")
