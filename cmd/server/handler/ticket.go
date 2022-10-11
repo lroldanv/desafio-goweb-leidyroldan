@@ -3,7 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"desafio-go-web/internal/tickets"
+	"desafio-go-web-leidyroldan/internal/tickets"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -22,7 +23,7 @@ func (s *Service) GetTicketsByCountry() gin.HandlerFunc {
 
 		destination := c.Param("dest")
 
-		tickets, err := s.service.GetTotalTickets(c, destination)
+		tickets, err := s.service.GetTicketsByCountry(c, destination)
 		if err != nil {
 			c.String(http.StatusInternalServerError, err.Error(), nil)
 			return
