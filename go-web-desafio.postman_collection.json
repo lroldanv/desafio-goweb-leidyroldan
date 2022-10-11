@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "c1906a86-42ea-4bb9-a8fa-8f28841c13be",
+		"name": "go-web-desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping Pong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ping Pong",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ping",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 16:22:38 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "pong"
+				}
+			]
+		},
+		{
+			"name": "Get tickets by destination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/ticket/getByCountry/Colombia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ticket",
+						"getByCountry",
+						"Colombia"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get tickets by destination",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/ticket/getByCountry/Colombia",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ticket",
+								"getByCountry",
+								"Colombia"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 16:25:47 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": \"77\",\n        \"Name\": \"Jonell Comazzo\",\n        \"Email\": \"jcomazzo24@cmu.edu\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"21:32\",\n        \"Price\": 1045\n    },\n    {\n        \"Id\": \"80\",\n        \"Name\": \"Eva Lascelles\",\n        \"Email\": \"elascelles27@pbs.org\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"22:09\",\n        \"Price\": 1029\n    },\n    {\n        \"Id\": \"183\",\n        \"Name\": \"Conrado Troutbeck\",\n        \"Email\": \"ctroutbeck52@canalblog.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"23:55\",\n        \"Price\": 995\n    },\n    {\n        \"Id\": \"199\",\n        \"Name\": \"Reinold Daniellot\",\n        \"Email\": \"rdaniellot5i@discovery.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"2:14\",\n        \"Price\": 887\n    },\n    {\n        \"Id\": \"213\",\n        \"Name\": \"Teodor Morphet\",\n        \"Email\": \"tmorphet5w@photobucket.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"7:23\",\n        \"Price\": 1062\n    },\n    {\n        \"Id\": \"382\",\n        \"Name\": \"Kayley McSorley\",\n        \"Email\": \"kmcsorleyal@senate.gov\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"1:53\",\n        \"Price\": 1348\n    },\n    {\n        \"Id\": \"463\",\n        \"Name\": \"Tanhya Merioth\",\n        \"Email\": \"tmeriothcu@wired.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"7:03\",\n        \"Price\": 504\n    },\n    {\n        \"Id\": \"468\",\n        \"Name\": \"Natividad Glanert\",\n        \"Email\": \"nglanertcz@artisteer.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"10:51\",\n        \"Price\": 1312\n    },\n    {\n        \"Id\": \"522\",\n        \"Name\": \"Abdul Boyen\",\n        \"Email\": \"aboyeneh@taobao.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"16:14\",\n        \"Price\": 1011\n    },\n    {\n        \"Id\": \"594\",\n        \"Name\": \"Alon Kinton\",\n        \"Email\": \"akintongh@istockphoto.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"20:53\",\n        \"Price\": 777\n    },\n    {\n        \"Id\": \"595\",\n        \"Name\": \"Bendicty Swaile\",\n        \"Email\": \"bswailegi@bbb.org\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"5:47\",\n        \"Price\": 721\n    },\n    {\n        \"Id\": \"841\",\n        \"Name\": \"Courtney Feild\",\n        \"Email\": \"cfeildnc@imgur.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"14:16\",\n        \"Price\": 1270\n    },\n    {\n        \"Id\": \"873\",\n        \"Name\": \"Lola Checcuzzi\",\n        \"Email\": \"lcheccuzzio8@hc360.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"21:18\",\n        \"Price\": 1050\n    },\n    {\n        \"Id\": \"889\",\n        \"Name\": \"Nataniel Offa\",\n        \"Email\": \"noffaoo@furl.net\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"9:28\",\n        \"Price\": 1165\n    },\n    {\n        \"Id\": \"910\",\n        \"Name\": \"Emelia Russi\",\n        \"Email\": \"erussip9@domainmarket.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"14:51\",\n        \"Price\": 509\n    },\n    {\n        \"Id\": \"911\",\n        \"Name\": \"Laurence Mordaunt\",\n        \"Email\": \"lmordauntpa@columbia.edu\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"6:31\",\n        \"Price\": 1138\n    },\n    {\n        \"Id\": \"942\",\n        \"Name\": \"Bethany McShirrie\",\n        \"Email\": \"bmcshirrieq5@cdbaby.com\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"3:46\",\n        \"Price\": 1243\n    },\n    {\n        \"Id\": \"993\",\n        \"Name\": \"Evelyn Wahncke\",\n        \"Email\": \"ewahnckerk@dailymail.co.uk\",\n        \"Country\": \"Colombia\",\n        \"Time\": \"12:23\",\n        \"Price\": 1086\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get average",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/ticket/getAverage/Russia",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"ticket",
+								"getAverage",
+								"Russia"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Oct 2022 16:28:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						}
+					],
+					"cookie": [],
+					"body": "0"
+				}
+			]
+		}
+	]
+}
